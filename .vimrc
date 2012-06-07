@@ -18,4 +18,6 @@ autocmd FileType python,php
 let loaded_matchparen = 1  " Don't highlight brackets
 
 " Start NERDTree when vim started without arguments
-autocmd VimEnter * if argc() == 0 | NERDTree | endif
+autocmd VimEnter * if !argc() | NERDTree | endif
+let g:NERDTreeWinSize = 40
+let g:NERDTreeMinimalUI = 1
