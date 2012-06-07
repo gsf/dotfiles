@@ -1,0 +1,10 @@
+directory = ~/Downloads
+session = ~/Downloads
+
+# from http://libtorrent.rakshasa.no/wiki/RTorrentCommonTasks#Watchadirectoryfortorrents
+# Watch a directory for new torrents, restart torrents that have been
+# copied back and stop those that have been deleted.
+
+schedule = watch_directory,10,10,load_start=~/Downloads/*.torrent
+schedule = tied_directory,10,10,start_tied=
+schedule = untied_directory,10,10,close_untied=
