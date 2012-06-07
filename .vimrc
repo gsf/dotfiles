@@ -16,3 +16,6 @@ autocmd FileType python,php
   \ setlocal ts=4
 
 let loaded_matchparen = 1  " Don't highlight brackets
+
+" Start NERDTree when vim started without arguments
+autocmd VimEnter * if argc() == 0 | NERDTree | endif
