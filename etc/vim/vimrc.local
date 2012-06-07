@@ -1,0 +1,16 @@
+set expandtab
+set hidden
+set incsearch
+set noshowmatch
+set showcmd
+set smartcase
+set smarttab
+set sw=4
+set ts=4
+
+autocmd FileType css,html,htmldjango,javascript
+  \ setlocal sw=2 |
+  \ setlocal ts=2
+
+let loaded_matchparen = 1  " Don't highlight brackets
+
