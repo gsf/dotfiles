@@ -6,6 +6,7 @@
   "strict": false,
   "undef": true,
   "predef": [
-    "_"
+    "_",
+    "Backbone"
   ]
 }
