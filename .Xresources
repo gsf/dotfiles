@@ -1,0 +1,4 @@
+xterm*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+xterm*reverseVideo: on
+xterm*vt100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*metaSendsEscape: true
