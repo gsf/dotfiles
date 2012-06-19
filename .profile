@@ -23,5 +23,5 @@ fi
 
 # Set up auth command for ssh-agent with keychain
 alias auth='eval `keychain -q --eval .ssh/id_dsa .ssh/id_rsa`'
-# Execute auth
+# Run auth automatically on login
 auth
