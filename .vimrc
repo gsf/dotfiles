@@ -10,6 +10,7 @@ set smarttab
 set sw=2
 set ts=2
 set ruler
+set mouse=a
 
 autocmd FileType python,php
   \ setlocal sw=4 |
@@ -17,7 +18,6 @@ autocmd FileType python,php
 
 let loaded_matchparen = 1  " Don't highlight brackets
 
-" Start NERDTree when vim started without arguments
-autocmd VimEnter * if !argc() | NERDTree | endif
+nmap <silent> <c-d> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40
 let g:NERDTreeMinimalUI = 1
