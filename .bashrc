@@ -54,3 +54,16 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
+    ;;
+# special escaping for Screen
+screen)
+    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME}:${PWD}\033\\"'
+    ;;
+*)
+    ;;
+esac
