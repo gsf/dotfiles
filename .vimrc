@@ -26,3 +26,5 @@ let loaded_matchparen = 1  " Don't highlight brackets
 nmap <silent> <c-d> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40
 let g:NERDTreeMinimalUI = 1
+
+let g:syntastic_enable_signs=0
