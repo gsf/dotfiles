@@ -8,8 +8,6 @@ set hidden
 set incsearch
 set noshowmatch
 set showcmd
-set ignorecase
-set smartcase
 set smarttab
 set sw=2
 set ts=2
