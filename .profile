@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-	. "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
@@ -22,6 +22,6 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # Set up auth command for ssh-agent with keychain
-alias auth='eval `keychain -q --eval .ssh/id_dsa .ssh/id_rsa`'
-# Run auth automatically on login
-auth
+if command -v keychain &> /dev/null; then
+    eval `keychain -q --eval .ssh/id_dsa .ssh/id_rsa`
+fi
