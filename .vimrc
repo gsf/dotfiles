@@ -1,6 +1,7 @@
 call pathogen#infect()
 
 filetype plugin indent on
+syntax on
 
 set encoding=utf-8
 set expandtab
@@ -14,6 +15,7 @@ set ts=2
 set ruler
 set nowrap
 set backspace=indent,eol,start
+set bg=light
 
 autocmd FileType python,php
   \ setlocal sw=4 |
