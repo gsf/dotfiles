@@ -1,4 +1,13 @@
 startup_message off
+
+# for osx terminal window titles
 termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+
+# don't change title for status messages
 hardstatus off
+
+# set title to e.g. [0] gsf@stegorompus:/home/gsf
 hardstatus string "[%n] %h"
+
+# use regular scrollback buffer
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
