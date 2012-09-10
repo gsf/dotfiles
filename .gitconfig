@@ -2,4 +2,4 @@
 	name = Gabriel Farrell
 	email = g@grrawr.com
 [core]
-	excludesfile = /home/gsf/.gitignore
+	excludesfile = ~/.gitignore
