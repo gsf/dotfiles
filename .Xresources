@@ -1,4 +1,6 @@
 xterm*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
 xterm*reverseVideo: on
-xterm*vt100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+xterm*vt100.translations: #override \
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  Super <Key>V: insert-selection(CLIPBOARD)
 xterm*metaSendsEscape: true
