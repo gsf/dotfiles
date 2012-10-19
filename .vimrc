@@ -17,7 +17,7 @@ set nowrap
 set backspace=indent,eol,start
 set bg=light
 
-autocmd FileType python,php
+autocmd FileType python ",php  (the php i'm doing these days is 2 spaces)
   \ setlocal sw=4 |
   \ setlocal ts=4
 
