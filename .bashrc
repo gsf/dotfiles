@@ -73,3 +73,7 @@ screen)
 *)
     ;;
 esac
+
+# dum svn aliases
+alias svnup='svn up --ignore-externals'
+alias svnst='svn st --ignore-externals | grep -v ^X'
