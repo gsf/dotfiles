@@ -77,3 +77,10 @@ esac
 # dum svn aliases
 alias svnup='svn up --ignore-externals'
 alias svnst='svn st --ignore-externals | grep -v ^X'
+alias grrep='find . ! -path '*.svn*' | xargs grep -l'
+
+# bash completion for symfony from 
+# https://github.com/mattmcmanus/dotfiles/blob/master/bash_completion/symfony_complete.symlink
+if [ -f "$HOME/.symfony-completion.bash" ]; then
+    . "$HOME/.symfony-completion.bash"
+fi
