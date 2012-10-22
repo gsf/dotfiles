@@ -30,5 +30,6 @@ let g:NERDTreeMinimalUI = 1
 let g:syntastic_enable_signs=0
 
 " See http://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension
-set directory=/var/tmp,/tmp,~/tmp,. " Put .swp files elsewhere
-set backupdir=/var/tmp,/tmp,~/tmp,. " Also ~ files
+set nobackup
+set nowritebackup
+set noswapfile
