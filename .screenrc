@@ -11,3 +11,9 @@ hardstatus string "[%n] %h"
 
 # use regular scrollback buffer
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# increase the scrollback
+defscrollback 5000
+
+# the default of 300ms slows vim switching
+maptimeout 0
