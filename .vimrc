@@ -38,4 +38,4 @@ set noswapfile
 set shellcmdflag=-ic
 
 " See http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
-set wildmode=longest,list
+set wildmode=longest,list,full
