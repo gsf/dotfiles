@@ -33,3 +33,9 @@ let g:syntastic_enable_signs=0
 set nobackup
 set nowritebackup
 set noswapfile
+
+" See http://stackoverflow.com/questions/8420354/vim-run-commands-in-my-bashrc
+set shellcmdflag=-ic
+
+" See http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
+set wildmode=longest,list
