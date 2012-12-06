@@ -77,7 +77,7 @@ esac
 # dum svn aliases
 alias svnup='svn up --ignore-externals'
 alias svnst='svn st --ignore-externals | grep -v ^X'
-alias grrep='find -X . -type f ! -path "*.svn*" ! -path "./tags" ! -path "*/base/*" | xargs grep -l'
+alias grrep='find . -type f ! -path "*.svn*" ! -path "./tags" ! -path "*/base/*" | xargs grep -l'
 
 # bash completion for symfony from 
 # https://github.com/mattmcmanus/dotfiles/blob/master/bash_completion/symfony_complete.symlink
