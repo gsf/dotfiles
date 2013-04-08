@@ -74,13 +74,18 @@ screen)
     ;;
 esac
 
-# dum svn aliases
+# dum svn/w2h aliases
 alias svnup='svn up --ignore-externals'
 alias svnst='svn st --ignore-externals | grep -v ^X'
-alias grrep='find . -type f ! -path "*.svn*" ! -path "./tags" ! -path "*/base/*" | xargs grep -l'
+alias grrep='find . -type f ! -path "*.svn*" ! -path "./tags" ! -path "*/base/*" ! -path "./cache/*" ! -path "./data/*" ! -path "./log/*" | xargs grep'
+
+# ctags
+alias gentags='find . -name "*.php" | ctags -L -'
 
 # bash completion for symfony from 
 # https://github.com/mattmcmanus/dotfiles/blob/master/bash_completion/symfony_complete.symlink
 if [ -f "$HOME/.symfony-completion.bash" ]; then
     . "$HOME/.symfony-completion.bash"
 fi
+
+export EDITOR=/usr/bin/vim
