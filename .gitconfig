@@ -3,3 +3,6 @@
 	email = g@grrawr.com
 [core]
 	excludesfile = ~/.gitignore
+[alias]
+  st = status -sb
+  ready = rebase -i @{u}
