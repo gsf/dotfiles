@@ -1,4 +1,4 @@
-call pathogen#infect()
+"call pathogen#infect()
 
 filetype plugin indent on
 syntax on
@@ -23,11 +23,11 @@ autocmd FileType python ",php  (the php i'm doing these days is 2 spaces)
 
 let loaded_matchparen = 1  " Don't highlight brackets
 
-nmap <silent> <c-d> :NERDTreeToggle<CR>
-let g:NERDTreeWinSize = 35
-let g:NERDTreeMinimalUI = 1
+"nmap <silent> <c-d> :NERDTreeToggle<CR>
+"let g:NERDTreeWinSize = 35
+"let g:NERDTreeMinimalUI = 1
 
-let g:syntastic_enable_signs=0
+"let g:syntastic_enable_signs=0
 
 " See http://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension
 set nobackup
