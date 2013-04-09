@@ -6,5 +6,3 @@
 [alias]
   st = status -sb
   ready = rebase -i @{u}
-[push]
-	default = simple
