@@ -39,3 +39,7 @@ set shellcmdflag=-ic
 
 " See http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
 set wildmode=longest,list,full
+
+" See http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
+" Allow saving of files as sudo when I forget to start vim using sudo.
+cmap w!! %!sudo tee > /dev/null %
