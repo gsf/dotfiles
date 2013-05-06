@@ -43,3 +43,6 @@ set wildmode=longest,list,full
 " See http://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! %!sudo tee > /dev/null %
+
+" http://kien.github.io/ctrlp.vim/#installation
+set runtimepath^=~/.vim/bundle/ctrlp.vim
