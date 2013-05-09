@@ -46,6 +46,8 @@ cmap w!! %!sudo tee > /dev/null %
 
 " http://kien.github.io/ctrlp.vim/#installation
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Don't do any clever directory sniffing
+let g:ctrlp_working_path_mode = ''
 
 " Easy most-recent-buffer switching
 nnoremap <Tab> :b#<CR>
