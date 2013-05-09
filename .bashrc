@@ -82,10 +82,7 @@ alias grrep='find . -type f ! -path "*.svn*" ! -path "./tags" ! -path "./cache/*
 # ctags
 alias gentags='find . -name "*.php" | ctags -L -'
 
-# bash completion for symfony from 
-# https://github.com/mattmcmanus/dotfiles/blob/master/bash_completion/symfony_complete.symlink
-if [ -f "$HOME/.symfony-completion.bash" ]; then
-    . "$HOME/.symfony-completion.bash"
-fi
+# https://github.com/wyrfel/Symfony-Bash-Completion-Script
+[ -f "$HOME/.bash_completion.d/symfony" ] && . "$HOME/.bash_completion.d/symfony"
 
 export EDITOR=/usr/bin/vim
