@@ -67,7 +67,7 @@ xterm*|rxvt*)
     PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
     ;;
 # special escaping for Screen
-screen)
+screen*)
     PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME}:${PWD}\033\\"'
     ;;
 *)
