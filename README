@@ -1,3 +1,11 @@
+Setup in new home dir:
+
+    git init
+    git remote add origin git@github.com:gsf/dotfiles.git
+    git pull origin master
+    git reset --hard HEAD
+    git push -u origin master
+
 Add the following to ~/.git/config for nicer status output:
 
     [status]
