@@ -1,8 +1,10 @@
 [user]
-	name = Gabriel Farrell
-	email = g@grrawr.com
+  name = Gabriel Farrell
+  email = g@grrawr.com
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [alias]
   st = status -sb
   ready = rebase -i @{u}
+[push]
+  default = current
