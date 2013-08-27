@@ -35,7 +35,8 @@ set nowritebackup
 set noswapfile
 
 " See http://stackoverflow.com/questions/8420354/vim-run-commands-in-my-bashrc
-set shellcmdflag=-ic
+" Commented out because it breaks netrw and scp://example.com/some-file
+"set shellcmdflag=-ic
 
 " See http://stackoverflow.com/questions/526858/how-do-i-make-vim-do-normal-bash-like-tab-completion-for-file-names
 set wildmode=longest,list,full
