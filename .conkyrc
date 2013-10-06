@@ -1,3 +1,4 @@
+background yes
 alignment bottom_right
 gap_x 6
 gap_y 20
@@ -22,8 +23,8 @@ ${color grey}Networking:
  Up:$color ${upspeed eth0} ${color grey} - Down:$color ${downspeed eth0}
 ${color grey}Battery:$color $battery ${battery_bar 4}
 $hr
-${color grey}Name              PID   CPU%   MEM%
-${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
-${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
-${color lightgrey} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
-${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
+${color grey}Name              PID     CPU%   MEM%$color
+${top name 1}  ${top pid 1} ${top cpu 1} ${top mem 1}
+${top name 2}  ${top pid 2} ${top cpu 2} ${top mem 2}
+${top name 3}  ${top pid 3} ${top cpu 3} ${top mem 3}
+${top name 4}  ${top pid 4} ${top cpu 4} ${top mem 4}
