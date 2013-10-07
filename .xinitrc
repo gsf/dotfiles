@@ -1,6 +1,6 @@
 xbindkeys
-xrdb .Xresources
-xmodmap .Xmodmap
+xrdb ~/.Xresources
+xmodmap ~/.Xmodmap
 xset -dpms
 xset s off
 pulseaudio --start
