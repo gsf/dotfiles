@@ -5,7 +5,7 @@ xset -dpms
 xset s off
 pulseaudio --start
 while true; do
-  xsetroot -name "`date -u +'%FT%R:%SZ'`"
+  xsetroot -name "`date +'%FT%R:%S%:z'`"
   sleep 1s
 done &
 conky
