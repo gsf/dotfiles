@@ -77,7 +77,7 @@ esac
 # dum svn/w2h aliases
 alias svnup='svn up --ignore-externals'
 alias svnst='svn st --ignore-externals | grep -v ^X'
-alias grrep='find * -regex "tags\|cache\|data\|log" -prune -o -print -type f | xargs grep'
+alias grrep='find * -regex "tags\|cache\|data\|log\|node_modules" -prune -o -type f -print | xargs grep -n'
 
 # ctags
 alias gentags='find . -name "*.php" | ctags -L -'
