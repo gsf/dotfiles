@@ -11,17 +11,18 @@ TEXT
 ${color grey}$nodename - $sysname $kernel on $machine$color
 $hr
 ${color grey}Uptime:$color $uptime
-${color grey}Frequency (in MHz):$color $freq
-${color grey}Frequency (in GHz):$color $freq_g
-${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
-${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
-${color grey}CPU Usage:$color $cpu% ${cpubar 4}
+${color grey}RAM:$color $mem/$memmax - $memperc% ${membar 4}
+${color grey}Swap:$color $swap/$swapmax - $swapperc% ${swapbar 4}
+${color grey}CPU:$color $cpu% ${cpubar 4}
+${color grey}Frequency:$color ${freq_g}GHz
 ${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
 ${color grey}File systems:
  / $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
 ${color grey}Wifi: Up:$color ${upspeed wlp2s0} ${color grey}- Down:$color ${downspeed wlp2s0}
+${color grey}Network:$color ${wireless_essid wlp2s0}
 ${color grey}Eth0: Up:$color ${upspeed enp0s20u2} ${color grey}- Down:$color ${downspeed enp0s20u2}
 ${color grey}Battery:$color $battery ${battery_bar 4}
+${color grey}Temp:$color $acpitemp °C
 $hr
 ${color grey}Name              PID     CPU%   MEM%$color
 ${top name 1}  ${top pid 1} ${top cpu 1} ${top mem 1}
