@@ -7,7 +7,7 @@ Setup in new home dir:
     git push -u origin master
 
 When you pull, if any errors like the following occur, move those files
-and pull again.
+and pull again:
 
     Untracked working tree file '.bashrc' would be overwritten by merge.
 
