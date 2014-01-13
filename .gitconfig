@@ -7,5 +7,6 @@
 [alias]
   st = status -sb
   ready = rebase -i @{u}
+  tree = log --oneline --graph --decorate --all --color
 [push]
   default = current
