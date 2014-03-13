@@ -27,4 +27,7 @@ do
   sleep 1s
 done | bar -f &
 
+# mouse hiding
+unclutter &
+
 exec mcwm
