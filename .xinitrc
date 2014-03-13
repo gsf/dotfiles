@@ -20,11 +20,11 @@ do
   else
     flag=true
     if [ $cap -le 10 ]; then
-      attn='>>>>>>>>>>>>>>>>>>>> '
+      attn='* '
     fi
   fi
   echo "\\r$attn$cap% `date +'%FT%R:%S%:z'` "
   sleep 1s
-done | bar &
+done | bar -f &
 
 exec mcwm
