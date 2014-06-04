@@ -23,5 +23,5 @@ fi
 
 # Set up auth command for ssh-agent with keychain
 if command -v keychain &> /dev/null; then
-    eval `keychain -q --eval .ssh/id_dsa .ssh/id_rsa`
+    eval `keychain -q --eval .ssh/id_rsa`
 fi
