@@ -58,3 +58,6 @@ command W w
 command Q q
 command Wq wq
 command WQ wq
+
+" Single space when joining and justifying
+set nojoinspaces
