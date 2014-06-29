@@ -5,6 +5,7 @@
   excludesfile = ~/.gitignore
   editor = vim
 [alias]
+  ci = commit
   st = status -sb
   ready = rebase -i @{u}
   tree = log --oneline --graph --decorate --all --color
