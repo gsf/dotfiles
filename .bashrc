@@ -86,3 +86,15 @@ alias gentags='find . -name "*.php" | ctags -L -'
 [ -f "$HOME/.bash_completion.d/symfony" ] && . "$HOME/.bash_completion.d/symfony"
 
 export EDITOR=/usr/bin/vim
+
+# Set term to 256 for gray tmux status line, etc.
+# from http://vim.wikia.com/wiki/256_colors_in_vim
+if [ -e /usr/share/terminfo/x/xterm-256color ]
+then
+  export TERM='xterm-256color'
+else
+  export TERM='xterm-color'
+fi
+
+# irssi needs a screen term
+alias irssi='TERM=screen-256color irssi'
