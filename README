@@ -14,4 +14,4 @@ and pull again:
 Add the following to ~/.git/config for nicer status output:
 
     [status]
-      showUntrackedFiles = no
+    	showUntrackedFiles = no
