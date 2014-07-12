@@ -74,7 +74,7 @@ alias gentags='find . -name "*.php" | ctags -L -'
 [ -f "$HOME/.bash_completion.d/symfony" ] && . "$HOME/.bash_completion.d/symfony"
 
 ED='rlwrap -c -e "" ed'
-alias ed=$ED
+alias e=$ED
 export EDITOR=$ED
 
 # Set term to 256 for gray tmux status line, etc.
