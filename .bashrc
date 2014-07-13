@@ -73,7 +73,7 @@ alias gentags='find . -name "*.php" | ctags -L -'
 # https://github.com/wyrfel/Symfony-Bash-Completion-Script
 [ -f "$HOME/.bash_completion.d/symfony" ] && . "$HOME/.bash_completion.d/symfony"
 
-ED='rlwrap -c -e "" ed'
+ED='rlwrap -b "" -e "" -c ed'
 alias e=$ED
 export EDITOR=$ED
 
