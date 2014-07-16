@@ -43,12 +43,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Git completion for OS X based on
-# http://denis.tumblr.com/post/71390665/adding-bash-completion-for-git-on-mac-os-x-snow-leopard
-if [ -f "$HOME/.git-completion.bash" ]; then
-    . "$HOME/.git-completion.bash"
-fi
-
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
