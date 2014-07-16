@@ -73,9 +73,9 @@ alias gentags='find . -name "*.php" | ctags -L -'
 # https://github.com/wyrfel/Symfony-Bash-Completion-Script
 [ -f "$HOME/.bash_completion.d/symfony" ] && . "$HOME/.bash_completion.d/symfony"
 
-ED='rlwrap -b "" -e "" -c ed'
-alias e=$ED
-export EDITOR=$ED
+# night of the living ed
+export EDITOR='rlwrap -b "" -e "" -c ed'
+alias e=$EDITOR
 
 # Set term to 256 for gray tmux status line, etc.
 # from http://vim.wikia.com/wiki/256_colors_in_vim
