@@ -3,6 +3,7 @@
   email = g@grrawr.com
 [core]
   excludesfile = ~/.gitignore
+  pager =
 [alias]
   ci = commit
   st = status -sb
