@@ -1,14 +1,10 @@
 {
   "asi": true,
-  "es5": true,
   "laxcomma": true,
   "browser": true,
   "node": true,
   "jquery": true,
   "strict": false,
   "undef": true,
-  "predef": [
-    "_",
-    "Backbone"
-  ]
+  "-W041": true
 }
