@@ -45,7 +45,7 @@ fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|rxvt*)
+xterm*|rxvt*|st*)
     PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
     ;;
 # special escaping for Screen
@@ -59,7 +59,7 @@ esac
 # dum svn/w2h aliases
 alias svnup='svn up --ignore-externals'
 alias svnst='svn st --ignore-externals | grep -v ^X'
-alias grrep='find * -regex "tags\|cache\|data\|log\|node_modules" -prune -o -type f -print | xargs grep -n'
+alias grrep='find * -regex "tags\|cache\|data\|log\|node_modules\|static/script.js" -prune -o -type f -print | xargs grep -n'
 
 # ctags
 alias gentags='find . -name "*.php" | ctags -L -'
@@ -73,12 +73,12 @@ alias e=$EDITOR
 
 # Set term to 256 for gray tmux status line, etc.
 # from http://vim.wikia.com/wiki/256_colors_in_vim
-if [ -e /usr/share/terminfo/x/xterm-256color ]
-then
-  export TERM='xterm-256color'
-else
-  export TERM='xterm-color'
-fi
+#if [ -e /usr/share/terminfo/x/xterm-256color ]
+#then
+#  export TERM='xterm-256color'
+#else
+#  export TERM='xterm-color'
+#fi
 
 # irssi needs a screen term
-alias irssi='TERM=screen-256color irssi'
+#alias irssi='TERM=screen-256color irssi'
