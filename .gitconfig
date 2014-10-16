@@ -6,6 +6,7 @@
   pager =
 [alias]
   ci = commit
+  co = checkout
   st = status -sb
   ready = rebase -i @{u}
   tree = log --oneline --graph --decorate --all --color
