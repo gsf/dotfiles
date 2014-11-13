@@ -9,25 +9,31 @@ syndaemon -t -k -i 2 -d
 xinput --set-prop 'eGalax Inc. eGalaxTouch EXC7903-16v07_Test6' 'Device Enabled' 0
 
 # status bar with blinky parts to warn of low bat
-flag=true
-while true
-do
-  cap=`cat /sys/class/power_supply/BAT0/capacity`
-  if $flag
-  then
-    flag=false
-    attn=''
-  else
-    flag=true
-    if [ $cap -le 10 ]; then
-      attn='* '
-    fi
-  fi
-  echo "\\r$attn$cap% `date +'%FT%R:%S%:z'` "
+#flag=true
+#while true
+#do
+#  cap=`cat /sys/class/power_supply/BAT0/capacity`
+#  if $flag
+#  then
+#    flag=false
+#    attn=''
+#  else
+#    flag=true
+#    if [ $cap -le 10 ]; then
+#      attn='* '
+#    fi
+#  fi
+#  echo "\\r$attn$cap% `date +'%FT%R:%S%:z'` "
+#  sleep 1s
+#done | bar -f &
+
+while true; do
+  xsetroot -name "`acpi` | `date +'%FT%R:%S%:z'` "
   sleep 1s
-done | bar -f &
+done &
 
 # mouse hiding
 unclutter &
 
-exec mcwm
+#exec mcwm
+exec dwm
