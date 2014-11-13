@@ -1,6 +1,7 @@
 [user]
   name = Gabriel Farrell
   email = g@gsf.io
+  username = gsf
 [core]
   excludesfile = ~/.gitignore
   pager =
