@@ -3,11 +3,11 @@
   email = g@gsf.io
   username = gsf
 [core]
-  excludesfile = ~/.gitignore
   pager =
 [alias]
   ci = commit
   co = checkout
+  rv = remote -v
   st = status -sb
   ready = rebase -i @{u}
   tree = log --oneline --graph --decorate --all --color
