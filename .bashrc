@@ -5,6 +5,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# Short prompt
 PS1='\$ '
 
 # don't put duplicate lines or lines starting with space in the history.
