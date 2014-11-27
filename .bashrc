@@ -32,20 +32,19 @@ alias la='ls -AF'
 alias l='ls -F'
 
 # enable bash completion in interactive shells
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
+if [ -f /etc/bash_completion ] && ! shopt -oq posix
+  then . /etc/bash_completion
 fi
 
-# If this is an xterm set the title to user@host:dir
+# Set the terminal title to user@host/dir
 case "$TERM" in
-xterm*|rxvt*|st*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD}\007"'
+  xterm*|rxvt*|st*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}${PWD}\007"'
     ;;
-# special escaping for Screen
-screen*)
-    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME}:${PWD}\033\\"'
+  screen*)
+    PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME}${PWD}\033\\"'
     ;;
-*)
+  *)
     ;;
 esac
 
