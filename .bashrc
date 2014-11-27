@@ -51,3 +51,16 @@ esac
 # night of the living ed
 export EDITOR='rlwrap -b "" -e "" -c ed'
 alias e=$EDITOR
+
+# Pithy dotenv loading in the shell
+# Inspired by http://stackoverflow.com/a/21831665/589391 and
+# https://github.com/gchaincl/dotenv.sh
+cd () {
+  builtin cd $@
+  if [ -e .env ]
+    then
+      while read line
+      do export "$line"
+      done < .env
+  fi
+}
