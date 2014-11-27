@@ -60,7 +60,7 @@ cd () {
   if [ -e .env ]
     then
       while read line
-      do export "$line"
+        do export "$line"
       done < .env
   fi
 }
