@@ -50,7 +50,7 @@ case "$TERM" in
 esac
 
 # night of the living ed
-export EDITOR='rlwrap -b "" -e "" -c ed'
+export EDITOR='rlfe ed'
 alias e=$EDITOR
 
 # Pithy dotenv loading in the shell
