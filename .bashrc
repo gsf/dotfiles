@@ -58,10 +58,9 @@ alias e=$EDITOR
 # https://github.com/gchaincl/dotenv.sh
 cd () {
   builtin cd $@
-  if [ -e .env ]
-    then
-      while read line
-        do export "$line"
-      done < .env
+  if [ -e .env ]; then
+    while read line; do
+      export "$line"
+    done < .env
   fi
 }
