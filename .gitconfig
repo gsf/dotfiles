@@ -4,6 +4,7 @@
   username = gsf
 [core]
   pager =
+  excludesfile = ~/.gitignore
 [alias]
   ci = commit
   co = checkout
